@@ -32,24 +32,24 @@ openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.na
 Domain (hay tên miền) là địa chỉ của một website trên Internet. Người dùng truy cập website bằng cách nhập tên miền vào trình duyệt.
 
 # Các trạng thái của domain
-OK / active|Tên miền hoạt động bình thường sau khi đăng ký.
-addPeriod			    |        Trạng thái sau khi vừa đăng ký tên miền.
-autoRenewPeriod|	    |    Thời gian tự động gia hạn tên miền. 
-inactive	 		    |        Name Server chưa thể liên kết với tên miền. 
-pendingCreate			|        Tên miền đang chờ được đăng ký.
-pendingDelete			|        Tên miền hết hạn đăng ký và chuẩn bị xóa.
-pendingRenew			|       Tên miền đang chờ gia hạn.
-pendingRestore		    |  Tên miền đã hết hạn đang chờ về trạng thái khôi phục (Active). 
-pendingTransfer		    | Tên miền chờ chuyển đổi nhà đăng ký.
-pendingUpdate			|    Tên miền đang chờ cập nhật.
-redemptionPeriod	    | Tên miền đã hết hạn, cần thanh toán phí gia hạn 
-renewPeriod			    |    Trạng thái tên miền được gia hạn. 
-serverDeleteProhibited	|	Ngăn tên miền của bạn bị xóa.
-serverHold			    |     Trạng thái tên miền không được kích hoạt trong DNS.
-serverRenewProhibited   |  Trạng thái tên miền không thể được gia hạn. 
-serverTransferProhibited|	Trạng thái không cho phép transfer tên miền.
-serverUpdateProhibited	|Trạng thái không cho phép cập nhật tên miền. 
-transferPeriod			| Đây là trạng thái cho phép sau khi transfer tên miền thành thông thì nhà đăng ký mới có thể yêu cầu nhà cung cấp xóa tên miền.
+OK / active|Tên miền hoạt động bình thường sau khi đăng ký.  
+|addPeriod			          |        Trạng thái sau khi vừa đăng ký tên miền.                                                                               |
+|autoRenewPeriod          |	        Thời gian tự động gia hạn tên miền.                                                                                   |
+|inactive	 		            |        Name Server chưa thể liên kết với tên miền.                                                                            |
+|pendingCreate			      |        Tên miền đang chờ được đăng ký.                                                                                        |
+|pendingDelete			      |        Tên miền hết hạn đăng ký và chuẩn bị xóa.                                                                              |
+|pendingRenew			        |       Tên miền đang chờ gia hạn.                                                                                              |
+|pendingRestore	          |  Tên miền đã hết hạn đang chờ về trạng thái khôi phục (Active).                                                               |
+|pendingTransfer		      | Tên miền chờ chuyển đổi nhà đăng ký.                                                                                          |
+|pendingUpdate			      |    Tên miền đang chờ cập nhật.                                                                                                |
+|redemptionPeriod         | Tên miền đã hết hạn, cần thanh toán phí gia hạn                                                                               |
+|renewPeriod		          |    Trạng thái tên miền được gia hạn.                                                                                          |
+|serverDeleteProhibited	  |	Ngăn tên miền của bạn bị xóa.                                                                                                 |
+|serverHold			          |     Trạng thái tên miền không được kích hoạt trong DNS.                                                                       |
+|serverRenewProhibited    |  Trạng thái tên miền không thể được gia hạn.                                                                                  |
+|serverTransferProhibited |	Trạng thái không cho phép transfer tên miền.                                                                                  |
+|serverUpdateProhibited	  |Trạng thái không cho phép cập nhật tên miền.                                                                                   |
+|transferPeriod			      | Đây là trạng thái cho phép sau khi transfer tên miền thành thông thì nhà đăng ký mới có thể yêu cầu nhà cung cấp xóa tên miền.|
 
 # Subdomain là gì?
 Subdomain là phần mở rộng, phần bổ sung xuất hiện trước của tên miền chính. 
