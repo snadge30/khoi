@@ -1,4 +1,4 @@
-##SSL
+## SSL
 
 SSL là tiêu chuẫn mã hóa giữa trình duyệt và web server. 
 
