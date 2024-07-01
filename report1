@@ -1,8 +1,8 @@
-SSL
+##SSL
 
 SSL là tiêu chuẫn mã hóa giữa trình duyệt và web server. 
 
-Có bao nhiêu cách chứng thực SSL ?
+##Có bao nhiêu cách chứng thực SSL ?
 DV SSL , 
 
 CSR file dùng làm gì trong quá trình tạo SSL
