@@ -33,7 +33,8 @@ rsync -a file.txt file_backup.txt
 ## rsync folder
 rsync -a /var/www/public_html/ /var/www/public_html_backup/
 
-rsync incremental
+## rsync incremental
+rsync -a source/oldfolder remote:source/folder source/newfolder  
 
 # cat command
 cat [OPTIONS] [FILE_NAMES]
