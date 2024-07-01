@@ -3,11 +3,11 @@
 SSL là tiêu chuẫn mã hóa giữa trình duyệt và web server. 
 
 # Có bao nhiêu cách chứng thực SSL ?
-    Domain Validation – DV SSL: là chứng chỉ xác thực tên miền dành cho các website cá nhân với khả năng mã hóa cơ bản.
-    Organization Validation – OV SSL: là chứng chỉ xác thực dành cho các tổ chức và doanh nghiệp có độ tin cậy cao.
-    Extended Validation – EV SSL: là loại chứng chỉ xác thực mở rộng, có độ tin cậy cao nhất thường được sử dụng cho các doanh nghiệp và tổ chức đang hoạt động.
-    Wildcard SSL: dành cho các website có nhu cầu sử dụng SSL cho nhiều subdomain khác nhau. Đặc biệt, Wildcard SSL Certificate khác với các loại SSL thông thường là có thể chạy cho nhiều subdomain khác nhau và không bị giới hạn và chỉ cần một chứng chỉ SSL duy nhất.
-    Subject Alternative Names – SANs SSL: Đây là loại chứng chỉ được thiết kế cho các ứng dụng Communication của Microsoft Exchange server, Microsoft Office Communications, Lync và cũng là giải pháp tiết kiệm cho Web Hosting và QA Testing.
+Domain Validation – DV SSL: là chứng chỉ xác thực tên miền dành cho các website cá nhân với khả năng mã hóa cơ bản.
+Organization Validation – OV SSL: là chứng chỉ xác thực dành cho các tổ chức và doanh nghiệp có độ tin cậy cao.
+Extended Validation – EV SSL: là loại chứng chỉ xác thực mở rộng, có độ tin cậy cao nhất thường được sử dụng cho các doanh nghiệp và tổ chức đang hoạt động.
+Wildcard SSL: dành cho các website có nhu cầu sử dụng SSL cho nhiều subdomain khác nhau. Đặc biệt, Wildcard SSL Certificate khác với các loại SSL thông thường là có thể chạy cho nhiều subdomain khác nhau và không bị giới hạn và chỉ cần một chứng chỉ SSL duy nhất.
+Subject Alternative Names – SANs SSL: Đây là loại chứng chỉ được thiết kế cho các ứng dụng Communication của Microsoft Exchange server, Microsoft Office Communications, Lync và cũng là giải pháp tiết kiệm cho Web Hosting và QA Testing.
 
 
 # CSR file dùng làm gì trong quá trình tạo SSL
@@ -33,23 +33,23 @@ Domain (hay tên miền) là địa chỉ của một website trên Internet. Ng
 
 # Các trạng thái của domain
 OK / active|Tên miền hoạt động bình thường sau khi đăng ký.
-addPeriod	|		            Trạng thái sau khi vừa đăng ký tên miền.
-autoRenewPeriod	|	        Thời gian tự động gia hạn tên miền. 
-inactive	 		|            Name Server chưa thể liên kết với tên miền. 
+addPeriod			    |        Trạng thái sau khi vừa đăng ký tên miền.
+autoRenewPeriod|	    |    Thời gian tự động gia hạn tên miền. 
+inactive	 		    |        Name Server chưa thể liên kết với tên miền. 
 pendingCreate			|        Tên miền đang chờ được đăng ký.
 pendingDelete			|        Tên miền hết hạn đăng ký và chuẩn bị xóa.
-pendingRenew			 |       Tên miền đang chờ gia hạn.
-pendingRestore		      |  Tên miền đã hết hạn đang chờ về trạng thái khôi phục (Active). 
-pendingTransfer		       | Tên miền chờ chuyển đổi nhà đăng ký.
-pendingUpdate			    |    Tên miền đang chờ cập nhật.
-redemptionPeriod		     | Tên miền đã hết hạn, cần thanh toán phí gia hạn 
-renewPeriod			      |    Trạng thái tên miền được gia hạn. 
+pendingRenew			|       Tên miền đang chờ gia hạn.
+pendingRestore		    |  Tên miền đã hết hạn đang chờ về trạng thái khôi phục (Active). 
+pendingTransfer		    | Tên miền chờ chuyển đổi nhà đăng ký.
+pendingUpdate			|    Tên miền đang chờ cập nhật.
+redemptionPeriod	    | Tên miền đã hết hạn, cần thanh toán phí gia hạn 
+renewPeriod			    |    Trạng thái tên miền được gia hạn. 
 serverDeleteProhibited	|	Ngăn tên miền của bạn bị xóa.
-serverHold			     |     Trạng thái tên miền không được kích hoạt trong DNS.
-serverRenewProhibited		|  Trạng thái tên miền không thể được gia hạn. 
+serverHold			    |     Trạng thái tên miền không được kích hoạt trong DNS.
+serverRenewProhibited   |  Trạng thái tên miền không thể được gia hạn. 
 serverTransferProhibited|	Trạng thái không cho phép transfer tên miền.
-serverUpdateProhibited		|Trạng thái không cho phép cập nhật tên miền. 
-transferPeriod			     | Đây là trạng thái cho phép sau khi transfer tên miền thành thông thì nhà đăng ký mới có thể yêu cầu nhà cung cấp xóa tên miền.
+serverUpdateProhibited	|Trạng thái không cho phép cập nhật tên miền. 
+transferPeriod			| Đây là trạng thái cho phép sau khi transfer tên miền thành thông thì nhà đăng ký mới có thể yêu cầu nhà cung cấp xóa tên miền.
 
 # Subdomain là gì?
 Subdomain là phần mở rộng, phần bổ sung xuất hiện trước của tên miền chính. 
