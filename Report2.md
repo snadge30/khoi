@@ -284,7 +284,7 @@ ls -a
 ps aux
 
 ## kill tiến trình
-kill pid
+kill [pid]
 
 # top command
 
@@ -307,8 +307,8 @@ st:  thời gian CPU bị CPU ảo hoá
 free : bộ nhớ chưa sử dụng , đây là tất cả bộ nhớ chưa được sử dụng cho bất kỳ thứ gì (kể cả bộ đệm) trong RAM  
 shared : đây là dung lượng bộ nhớ được sử dụng chủ yếu cho tmpfs  
 buff/cache , tổng số bộ đệm và bộ đệm:  
- buff: bộ nhớ được sử dụng bởi bộ đệm kernel , là bộ nhớ mà kernel có thể tận dụng  
- cache: Bộ đệm chứa nội dung của các tệp trong hệ thống tệp được lưu vào RAM và nói chung đây là một con số cao.  
+ -buff: bộ nhớ được sử dụng bởi bộ đệm kernel , là bộ nhớ mà kernel có thể tận dụng  
+ -cache: Bộ đệm chứa nội dung của các tệp trong hệ thống tệp được lưu vào RAM và nói chung đây là một con số cao.  
 
 # df command
 
