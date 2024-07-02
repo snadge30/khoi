@@ -45,6 +45,11 @@ ssh username@serverip -i ~/.ssh/private_key
 ssh username@serverip -p port_number  
 
 # scp command
+-P : Chỉ định port.  
+-p : thời gian sửa đổi và truy cập file.  
+-q : tùy chọn này nếu bạn muốn loại bỏ đo lường tiến trình và thông báo không lỗi.  
+-C : Tùy chọn này buộc scp nén dữ liệu khi nó được gửi đến máy đích  
+-r : sao chép các thư mục  
 
 ## scp 1 file
 scp file.txt username@serverip:destination  
