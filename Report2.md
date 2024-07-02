@@ -22,9 +22,10 @@
 # ssh command  
 
 ## Dùng password  
+```
 ssh username@serverip  
 sau đó nhập password của user.
-
+```
 ## Dùng key  
 **Bước 1**: Tạo SSH Keygen  
 ssh-keygen -t rsa  
@@ -38,12 +39,13 @@ Thêm public key đã tạo đến máy chủ SSH. Bằng cách thêm nội dung
 ssh-copy-id -i /path/to/key/file user@serverip  
 **Bước 5**: Hoàn tất  
 Kết nối vào máy chủ SSH Keygen sử dụng private key:  
-
+```
 ssh username@serverip -i ~/.ssh/private_key  
-
+```
 ## Dùng port custom  
+```
 ssh username@serverip -p port_number  
-
+```
 # scp command
 -P : Chỉ định port.  
 -p : thời gian sửa đổi và truy cập file.  
@@ -52,23 +54,28 @@ ssh username@serverip -p port_number
 -r : sao chép các thư mục  
 
 ## scp 1 file
+```
 scp file.txt username@serverip:destination  
-
+```
 ## scp 1 folder
+```
 scp -r folder username@serverip:destination  
-
+```
 # rsync command
 Đồng bộ dữ liệu trên linux  
 
 ## rsync file
+```
 rsync -a file.txt file_backup.txt
-
+```
 ## rsync folder
+```
 rsync -a /var/www/public_html/ /var/www/public_html_backup/
-
+```
 ## rsync incremental
+```
 rsync -a source/oldfolder remote:source/folder source/newfolder  
-
+```
 # cat command
 Dùng để hiển thị nội dung của file/tập tin ra màn hình hoặc copy nội dung tập tin, tạo mới tập tin,…   
 cat [OPTIONS] [FILE_NAMES]
