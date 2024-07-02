@@ -208,30 +208,39 @@ dig +short www.example.com NS
 # tar/zip/unzip command
 
 # Nén/Giải nén file tar.gz - Nén/Giải nén file .zip
-tar -zxvf [file.tar.gz] - giai nen
-tar -zcvf [file.tar.gz] - nen
+tar -zxvf [file.tar.gz] - giai nen  
+tar -zcvf [file.tar.gz] - nen  
 
 # mount/umount command
 
 ## Add thêm một ổ cứng sdb ~ 5gb
-fdisk /dev/sdb
+fdisk /dev/sdb  
 ## Kiểm tra được có bao nhiêu ổ cứng trên máy chủ
-fdisk -l
+fdisk -l  
 ## Mount ổ cứng vào /mnt/test
-mount /dev/sdb /mnt/test
+mount /dev/sdb /mnt/test  
 
 ## Umount /mnt/test
-umount /mnt/test
+umount /mnt/test  
 
 # Symbolic Links, Hard Links command
 
 ## Định nghĩ Sym Link
-là một file tham chiếu đến file khác hoặc thư mục khác dưới dạng đường dẫn tương đối hoặc tuyệt đối
+là một file tham chiếu đến file khác hoặc thư mục khác dưới dạng đường dẫn tương đối hoặc tuyệt đối  
+ln -s [file nguồn] [file đích]
 
 ## Định nghĩ Hard Link
-là các liên kết cấp thấp ( low-level links) mà hệ thống sử dụng để tạo các thành phần của chính hệ thống file, chẳng hạn như file và thư mục.
+là các liên kết cấp thấp ( low-level links) mà hệ thống sử dụng để tạo các thành phần của chính hệ thống file, chẳng hạn như file và thư mục.  
+ln [file nguồn] [file đích]  
 
-Ví dụ về Sym Link và Hard Link
+## Ví dụ về Sym Link và Hard Link
+| Hard links | Symbolic links |
+|:-------|:------:|
+|  Chỉ liên kết được tới file, không liên kết được tới thư mục  |  Có thể liên kết được tới thư mục  |
+|  Không tham chiếu được tới file trên ổ đĩa khác  |  Có thể tham chiếu tới file/thư mục khác ổ đĩa  |
+| Liên kết tới một file vẫn còn ngay cả khi file đó đã được di chuyển | Liên kết không còn tham chiếu được nữa nếu file được di chuyển |
+| Được liên kết với inode tham chiếu vật lý trên ổ cứng nơi chứa file | Liên kết tham chiếu tên file/thư mục trừu tượng mà không phải địa chỉ vật lý. Chúng được cung cấp inode riêng của mình |
+| Có thể làm việc với mọi ứng dụng | Một số ứng dụng không cho phép symbolic link |
 
 # ls command
 
