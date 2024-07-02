@@ -1,5 +1,5 @@
 # ping/hping3 ping đến domain vietnix.vn sau đó giải thích
-![ss1](/image/screenshot1.png)
+![ss1](/image/screenshot1.png)  
 ttl = khả năng truyền dữ liệu và phản hồi.  
 
 time = khả năng truyền dữ liệu giữa các thiết bị với nhau  
