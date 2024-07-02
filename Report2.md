@@ -69,8 +69,8 @@ cat [OPTIONS] [FILE_NAMES]
 ## cat nội dung 1 file
 cat filename
 
-## cat dòng thứ <n> trong file
-cat -n filename | sed -n <n>p 
+## cat dòng thứ n trong file
+cat -n filename | sed -n [n]p 
 
 ## cat nhiều dòng vào 1 file bằng EOF
 cat <<EOF>> filename
@@ -215,14 +215,14 @@ mv filename/ newlocation/
 
 # cut command
 
-## cut kí tự thứ <n> trong string
-cut -c <n> filename
+## cut kí tự thứ n trong string
+cut -c [n] filename
 
-## cut từ kí tự thứ <n> trở về sau
-cut -c n- filename
+## cut từ kí tự thứ n trở về sau
+cut -c [n]- filename
 
-## cut từ kí tự thứ <n> trở về trước
-cut -c -n filename
+## cut từ kí tự thứ n trở về trước
+cut -c -[n] filename
 
 # dig command
 
