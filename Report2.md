@@ -80,8 +80,9 @@ cat filename
 cat -n filename | sed -n [n]p 
 
 ## cat nhiều dòng vào 1 file bằng EOF
+```
 cat <<EOF>> filename
-
+```
 # echo command
 echo abc
 
