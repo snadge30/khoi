@@ -108,15 +108,15 @@ sort -r filename
 sort -k filename
 
 ## uniq command
-    -u Chỉ hiển thị các dòng không lặp lại  
-    -d Không hiển thị các dòng không lặp lại  
-    -c Hiển thị một báo cáo gồm dòng và số lần xuất hiện trong văn bản, khi tùy chọn này được sử dụng, hai tùy chọn -u và -d bị bỏ qua dù có được đưa vào lệnh hay không.  
-    -i Bỏ qua hoa - thường khi so sánh các dòng  
-    -f Bỏ qua một số trường trong mỗi dòng  
-    -s Bỏ qua một số ký tự trong mỗi dòng  
-    -w Chỉ định số ký tự cần so sánh khi so sánh dòng, các ký tự sau đó được bỏ qua  
-    --help Hiển thị thông báo trợ giúp  
-    --version Hiển thị thông tin phiên bản  
+-u Chỉ hiển thị các dòng không lặp lại  
+-d Không hiển thị các dòng không lặp lại  
+-c Hiển thị một báo cáo gồm dòng và số lần xuất hiện trong văn bản, khi tùy chọn này được sử dụng, hai tùy chọn -u và -d bị bỏ qua dù có được đưa vào lệnh hay không.  
+-i Bỏ qua hoa - thường khi so sánh các dòng  
+-f Bỏ qua một số trường trong mỗi dòng  
+-s Bỏ qua một số ký tự trong mỗi dòng  
+-w Chỉ định số ký tự cần so sánh khi so sánh dòng, các ký tự sau đó được bỏ qua  
+--help Hiển thị thông báo trợ giúp  
+--version Hiển thị thông tin phiên bản  
     
 ## lọc ra các dòng lặp lại trong một file
 uniq -d
