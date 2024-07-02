@@ -1,9 +1,9 @@
 # ping/hping3 ping đến domain vietnix.vn sau đó giải thích
 ![ss1](/image/screenshot1.png)  
 ICMP sed = số thứ tự của mỗi gói ICMP.  
-from: Chỉ điểm đến và địa chỉ IP của nó  
-ttl = Chỉ giá trị Thời gian tồn tại từ 1 đến 255. Nó đại diện cho số bước nhảy mạng mà một gói tin có thể thực hiện trước khi bộ định tuyến loại bỏ nó.
-time = Chỉ thời gian gói tin đến đích và quay trở lại nguồn. Đơn vị đo lượng là mili giây.
+from: Chỉ điểm đến và địa chỉ IP của nó.  
+ttl = Chỉ giá trị Thời gian tồn tại từ 1 đến 255. Nó đại diện cho số bước nhảy mạng mà một gói tin có thể thực hiện trước khi bộ định tuyến loại bỏ nó.  
+time = Chỉ thời gian gói tin đến đích và quay trở lại nguồn. Đơn vị đo lượng là mili giây.  
 
 hping3 không ping được.  
 
