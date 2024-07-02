@@ -235,7 +235,7 @@ ln [file nguồn] [file đích]
 
 ## Ví dụ về Sym Link và Hard Link
 | Hard links | Symbolic links |
-|:-------|:------:|
+|:-------|:------|
 |  Chỉ liên kết được tới file, không liên kết được tới thư mục  |  Có thể liên kết được tới thư mục  |
 |  Không tham chiếu được tới file trên ổ đĩa khác  |  Có thể tham chiếu tới file/thư mục khác ổ đĩa  |
 | Liên kết tới một file vẫn còn ngay cả khi file đó đã được di chuyển | Liên kết không còn tham chiếu được nữa nếu file được di chuyển |
