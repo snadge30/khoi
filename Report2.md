@@ -78,39 +78,48 @@ rsync -a source/oldfolder remote:source/folder source/newfolder
 ```
 # cat command
 Dùng để hiển thị nội dung của file/tập tin ra màn hình hoặc copy nội dung tập tin, tạo mới tập tin,…   
+```
 cat [OPTIONS] [FILE_NAMES]
-
+```
 ## cat nội dung 1 file
+```
 cat filename
-
+```
 ## cat dòng thứ n trong file
+```
 cat -n filename | sed -n [n]p 
-
+```
 ## cat nhiều dòng vào 1 file bằng EOF
 ```
 cat <<EOF>> filename
 ```
 # echo command
+```
 echo abc
-
+```
 ## Dùng echo để chèn thêm 1 dòng vào cuối file
+```
 echo 'hello' >> filename
-
+```
 ## Dùng echo để overwirte nội dung của file
+```
 echo 'hello' > filename
-
+```
 ## tail/head command
+```
 head -n 3 text  
 tail -n 7 text
-
+```
 ## tail và tailf  
+```
 tail-f   // theo dõi sự thay đổi của file  
-
+```
 # sed command
 
 ## Dùng sed để find and replace một string trong file
+```
 sed -i 's/unix/linux/g' text  //replace unix = linux  
-
+```
 # traceroute/tracert commandl
 
 Sau khi traceroute xong giải thích chi tiết kết quả trả về  
@@ -120,35 +129,45 @@ Các dòng tiếp theo là tên máy chủ được cung cấp, theo sau là ip 
 # netstat command
 
 ## hiển thị các socket đang listen
+```
 netstat -tln
-
+```
 ## don't resolve hostname
+```
 netstat --numeric-hosts
-
+```
 ## don't resolve portname
+```
 netstat --numeric-ports
-
+```
 ## display process name/PID
+```
 netstat -tp
-
+```
 ## only show tcp socket
+```
 netstat -at
-
+```
 ## only show udp socket
+```
 netstat -au
-
+```
 # sort command
+```
 sort filename
-
+```
 ## sort theo thứ tự tăng dần
+```
 sort filename
-
+```
 ## sort theo thứ tự giảm dần
+```
 sort -r filename
-
+```
 ## sort theo column
+```
 sort -k filename
-
+```
 ## uniq command
 -u Chỉ hiển thị các dòng không lặp lại  
 -d Không hiển thị các dòng không lặp lại  
@@ -161,17 +180,23 @@ sort -k filename
 --version Hiển thị thông tin phiên bản  
     
 ## lọc ra các dòng lặp lại trong một file
+```
 uniq -d
+```
 ## lọc ra các dòng lặp lại trong file và đếm số lượng các dòng lặp lại
+```
 uniq -dc
-
+```
 #wc command
 
 ## Đếm số dòng trong file
+```
 ls | wc -l
+```
 ## Đếm số kí tự trong file
+```
 ls | wc -w
-
+```
 # chmod, chown, chattr command
 
 ## Phân quyền bằng số, phân quyền bằng chữ
@@ -185,10 +210,13 @@ ls | wc -w
 7 read, write, execute  
 
 # Đổi owner user/group
+```
 chown USER FILE
-
+```
 ## Set Immutable Attribute
+```
 chattr [options] [attribute] [file]  
+```
 options   
     -R: Áp dụng thay đổi thuộc tính cho thư mục và tất cả các tệp con.  
     -v: Hiển thị thông báo khi thực hiện thay đổi thuộc tính.  
@@ -204,77 +232,98 @@ attribute
 # find command
 
 ## find các file có đuôi .log
+```
 find . -type f -name "*.log"
-
+```
 ## find các folder có tên abc
+```
 find . -name abc
-
+```
 ## find các file có tên abc
+```
 find . -name abc
-
+```
 ## find các file có tên abc và thực hiện phần quyền read only cho file
+```
 find . -name 'abc' -exec chmod 444 {} \;
-
+```
 # cp command
 
 ## cp file
+```
 cp file.txt file_backup.txt
-
+```
 ## cp folder
+```
 cp -r /home/Video /home/new-folder
-
+```
 # mv command
 
 ## mv file, folder
+```
 mv filename/ newlocation/
-
+```
 # cut command
 
 ## cut kí tự thứ n trong string
+```
 cut -c [n] filename
-
+```
 ## cut từ kí tự thứ n trở về sau
+```
 cut -c [n]- filename
-
+```
 ## cut từ kí tự thứ n trở về trước
+```
 cut -c -[n] filename
-
+```
 # dig command
 
 ## Dùng Dig command để kiểm tra resolv record A, MX, NS
+```
 dig +short www.example.com A  
 dig +short www.example.com MX  
 dig +short www.example.com NS  
+```
 ## Dùng Dig command để kiểm tra resolv record A, MX, NS với custom DNS
 
 # tar/zip/unzip command
 
 # Nén/Giải nén file tar.gz - Nén/Giải nén file .zip
+```
 tar -zxvf [file.tar.gz] - giai nen  
 tar -zcvf [file.tar.gz] - nen  
-
+```
 # mount/umount command
 
 ## Add thêm một ổ cứng sdb ~ 5gb
+```
 fdisk /dev/sdb  
+```
 ## Kiểm tra được có bao nhiêu ổ cứng trên máy chủ
+```
 fdisk -l  
+```
 ## Mount ổ cứng vào /mnt/test
+```
 mount /dev/sdb /mnt/test  
-
+```
 ## Umount /mnt/test
+```
 umount /mnt/test  
-
+```
 # Symbolic Links, Hard Links command
 
 ## Định nghĩ Sym Link
 là một file tham chiếu đến file khác hoặc thư mục khác dưới dạng đường dẫn tương đối hoặc tuyệt đối  
+```
 ln -s [file nguồn] [file đích]
-
+```
 ## Định nghĩ Hard Link
 là các liên kết cấp thấp ( low-level links) mà hệ thống sử dụng để tạo các thành phần của chính hệ thống file, chẳng hạn như file và thư mục.  
+```
 ln [file nguồn] [file đích]  
-
+```
 ## Ví dụ về Sym Link và Hard Link
 | Hard links | Symbolic links |
 |:-------|:------|
@@ -287,25 +336,33 @@ ln [file nguồn] [file đích]
 # ls command
 
 ## Liệt kê danh sách file/thư mục
+```
 ls
+```
 ## Liệt kê danh sách file/thư mục và thuộc tính
+```
 ls -l
+```
 ## Show file ẩn
+```
 ls -a
-
+```
 # ps command
 
 ## show tiến trình
+```
 ps aux
-
+```
 ## kill tiến trình
+```
 kill [pid]
-
+```
 # top command
 
 ## Kiểm tra tài nguyên cpu đang sử dụng của một vài process đang chạy
+```
 top
-
+```
 ## Giải thích về Load average, us, sy, ni, id, wa, hi, si, st, zombie process, sleeping process
 us: thời gian CPU của người dùng (hoặc) % thời gian CPU dành cho không gian người dùng  
 sy: thời gian CPU hệ thống (hoặc) % thời gian CPU dành cho không gian kernel  
@@ -328,7 +385,8 @@ buff/cache , tổng số bộ đệm và bộ đệm:
 # df command
 
 ## Xem dung lượng disk
+```
 df -h
-
+```
 ## Phân vùng / là gì
 là sự phân chia của đĩa cứng riêng biệt.
