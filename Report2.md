@@ -363,13 +363,13 @@ kill [pid]
 ```
 top
 ```
-## Giải thích về Load average, us, sy, ni, id, wa, hi, si, st, zombie process, sleeping process
+## Giải thích về Load average, us, sy, ni, id, wa, hi, si, st, zombie process, sleeping processhi
 us: thời gian CPU của người dùng (hoặc) % thời gian CPU dành cho không gian người dùng  
 sy: thời gian CPU hệ thống (hoặc) % thời gian CPU dành cho không gian kernel  
 ni: thời gian CPU đẹp của người dùng (hoặc) % thời gian CPU dành cho các quy trình có mức độ ưu tiên thấp  
 id: thời gian CPU nhàn rỗi (hoặc) % thời gian CPU không hoạt động  
 wa: io chờ thời gian CPU (hoặc) % thời gian CPU dành để chờ  
-xin chào: irq phần cứng (hoặc) % thời gian CPU dành cho việc bảo trì/xử lý các gián đoạn phần cứng  
+hi: irq phần cứng (hoặc) % thời gian CPU dành cho việc bảo trì/xử lý các gián đoạn phần cứng  
 si: irq phần mềm (hoặc) % thời gian CPU dành để bảo trì/xử lý các gián đoạn phần mềm  
 st:  thời gian CPU bị CPU ảo hoá  
 
