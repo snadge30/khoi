@@ -1,4 +1,5 @@
 # ping/hping3 ping đến domain vietnix.vn sau đó giải thích
+##ping
 ![ss1](/image/screenshot1.png)  
 
 <strong>ICMP sed</strong> = số thứ tự của mỗi gói ICMP.  
@@ -6,7 +7,10 @@
 <strong>ttl</strong> = Chỉ giá trị Thời gian tồn tại từ 1 đến 255. Nó đại diện cho số bước nhảy mạng mà một gói tin có thể thực hiện trước khi bộ định tuyến loại bỏ nó.  
 <strong>time</strong> = Chỉ thời gian gói tin đến đích và quay trở lại nguồn. Đơn vị đo lượng là mili giây.  
 
-hping3 không ping được.  
+
+##hping3
+![ss2](/image/screenshot2.png)
+
 
 # ssh command  
 
