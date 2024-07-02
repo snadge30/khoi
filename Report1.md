@@ -32,7 +32,7 @@ openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.na
 Domain (hay tên miền) là địa chỉ của một website trên Internet. Người dùng truy cập website bằng cách nhập tên miền vào trình duyệt.  
 
 # Các trạng thái của domain
-OK / active|Tên miền hoạt động bình thường sau khi đăng ký.   
+OK / activ :Tên miền hoạt động bình thường sau khi đăng ký.   
 addPeriod			         :         Trạng thái sau khi vừa đăng ký tên miền.  
 autoRenewPeriod         :         Thời gian tự động gia hạn tên miền.  
 inactive	 		           :      Name Server chưa thể liên kết với tên miền.  
