@@ -1,5 +1,6 @@
 # ping/hping3 ping đến domain vietnix.vn sau đó giải thích
-##ping
+##ping  
+
 ![ss1](/image/screenshot1.png)  
 
 <strong>ICMP sed</strong> = số thứ tự của mỗi gói ICMP.  
@@ -8,7 +9,8 @@
 <strong>time</strong> = Chỉ thời gian gói tin đến đích và quay trở lại nguồn. Đơn vị đo lượng là mili giây.  
 
 
-##hping3
+##hping3  
+
 ![ss2](/image/creenshot2.png)
 
 
