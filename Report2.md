@@ -11,7 +11,7 @@
 
 ## hping3  
 
-![ss2](/image/screenshot2.png)
+![ss2](/image/screenshot2.png)  
 **len** = kích thước, tính bằng byte, của dữ liệu được thu thập từ tầng data link.   
 **ip** = source ip address.  
 **id** = trường ID IP.
@@ -23,9 +23,23 @@
 
 ## Dùng password  
 ssh username@serverip  
+sau đó nhập password của user.
 
 ## Dùng key  
-ssh -i ~/.ssh/private_key username@serverip  
+**Bước 1**: Tạo SSH Keygen  
+ssh-keygen -t rsa  
+Nếu bạn muốn chỉ định đường dẫn cho file SSH key thì thay thế “id_rsa” trong lệnh bằng đường dẫn tuyệt đối đến file.  
+**Bước 2**: Nhập tên file  
+Bạn cần đặt tên file cho SSH Keygen khi được yêu cầu.  
+**Bước 3**: Nhập passphrase  
+Sau khi đặt tên xong, hãy đặt (mật khẩu) cho tệp khi được yêu cầu. Thường mục này là không bắt buộc, bạn có thể để trống nếu muốn.  
+**Bước 4**: Phân phối public key – SSH Keygen  
+Thêm public key đã tạo đến máy chủ SSH. Bằng cách thêm nội dung của file public key vào file ‘authorized_keys’ trên máy chủ SSH của bạn.  
+ssh-copy-id -i /path/to/key/file user@serverip  
+**Bước 5**: Hoàn tất  
+Kết nối vào máy chủ SSH Keygen sử dụng private key:  
+
+ssh username@serverip -i ~/.ssh/private_key  
 
 ## Dùng port custom  
 ssh username@serverip -p <port_number>  
