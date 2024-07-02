@@ -11,8 +11,13 @@
 
 ## hping3  
 
-![ss2](/image/creenshot2.png)
-
+![ss2](/image/screenshot2.png)
+**len** = kích thước, tính bằng byte, của dữ liệu được thu thập từ tầng data link.   
+**ip** = source ip address.  
+**id** = trường ID IP.
+**rtt** = thời gian khứ hồi tính bằng mili giây.  
+**tos** = service của IP header.  
+**iplen** = tổng của IP.  
 
 # ssh command  
 
