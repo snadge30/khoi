@@ -9,7 +9,7 @@
 
 
 ##hping3
-![ss2](/image/screenshot2.png)
+![ss2](/image/creenshot2.png)
 
 
 # ssh command  
