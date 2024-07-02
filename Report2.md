@@ -42,15 +42,15 @@ Kết nối vào máy chủ SSH Keygen sử dụng private key:
 ssh username@serverip -i ~/.ssh/private_key  
 
 ## Dùng port custom  
-ssh username@serverip -p <port_number>  
+ssh username@serverip -p port_number  
 
 # scp command
 
 ## scp 1 file
-scp file.txt username@serverip:<destination>  
+scp file.txt username@serverip:destination  
 
 ## scp 1 folder
-scp -r folder username@serverip:<destination>  
+scp -r folder username@serverip:destination  
 
 # rsync command
 
