@@ -53,6 +53,7 @@ scp file.txt username@serverip:destination
 scp -r folder username@serverip:destination  
 
 # rsync command
+Đồng bộ dữ liệu trên linux  
 
 ## rsync file
 rsync -a file.txt file_backup.txt
@@ -64,6 +65,7 @@ rsync -a /var/www/public_html/ /var/www/public_html_backup/
 rsync -a source/oldfolder remote:source/folder source/newfolder  
 
 # cat command
+Dùng để hiển thị nội dung của file/tập tin ra màn hình hoặc copy nội dung tập tin, tạo mới tập tin,…   
 cat [OPTIONS] [FILE_NAMES]
 
 ## cat nội dung 1 file
