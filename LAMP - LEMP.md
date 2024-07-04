@@ -1,4 +1,4 @@
-# LAMP + Larave
+# LAMP 
 
 # Update
 ```
@@ -29,6 +29,11 @@ mysql_secure_installation
 **Tạo database và user**
 ```
 mysql
+Create database wordpress_db;
+CREATE USER 'user_name'@'%' IDENTIFIED BY 'password';
+GRANT ALL ON wordpress_db.* TO 'user_name'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
 Create database laravel_db;
 CREATE USER 'user_name'@'%' IDENTIFIED BY 'password';
 GRANT ALL ON laravel_db.* TO 'user_name'@'localhost' WITH GRANT OPTION;
@@ -39,7 +44,8 @@ exit;
 ```
 sudo apt install php libapache2-mod-php php-mysql php-fpm
 ```
-# Bước4: Install laravel
+# Bước4: Install laravel và wordpress
+**Install laravel**
 ```
 apt install composer
 composer create-project --prefer-dist laravel/laravel lavarel
@@ -51,19 +57,29 @@ chown -R www-data:www-data laravel/*
 ```
 **kết nối database**
 ```
-vi .env //
+vi .env 
 ```
-**Cấu hình apache và port 8001**
+**Install wordpress**
 ```
-vi /etc/apache2/ports.conf
-chỉnh port từ 80 thành 8001
+cd /var/www/
+wget https://wordpress.org/latest.tar.gz
+tar -xvzf latest.tar.gz
+sudo chown -R www-data:www-data wordpress/*
+cd wordpress
+cp wp-config-sample.php wp-config.php
 ```
+**Kết nối database**
+```
+vi wp-config.php
+```
+**Cấu hình Apache và VirtualHost**
 ```
 cd /etc/apache2/sites-available/
-cp 0000-default.conf laravel.conf
 ```
 ```
-  <VirtualHost *:8001>
+cp 000-default.conf laravel.training.vn.conf
+
+  <VirtualHost *:80>
    ServerName laravel.training.vn
    ServerAdmin webmaster@thedomain.com
    DocumentRoot /var/www/laravel/public
@@ -74,25 +90,39 @@ cp 0000-default.conf laravel.conf
    ErrorLog ${APACHE_LOG_DIR}/error.log
    CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
 ```
 ```
-a2ensite laravel.conf
+cp 000-default.conf wordpress.training.vn.conf
+
+  <VirtualHost *:80>
+   ServerName wordpress.training.vn
+   ServerAdmin webmaster@thedomain.com
+   DocumentRoot /var/www/wordpress/
+
+   <Directory /var/www/wordpress>
+       AllowOverride All
+   </Directory>
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+```
+```
+a2ensite laravel.training.vn
+a2ensite wordpress.training.vn
 ```
 **restart apache**
 ```
 systemctl restart apache2.service
 ```
-
-# Kiểm tra
-Serverip:8001
-
 --- 
 ---
 ---
 ---
 ---
 
-# LEMP + Wordpress
+# LEMP
 
 # Bước 1: Install Nginx
 
@@ -108,6 +138,11 @@ Create database wordpress_db;
 CREATE USER 'user_name'@'%' IDENTIFIED BY 'password';
 GRANT ALL ON wordpress_db.* TO 'user_name'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
+
+Create database laravel_db;
+CREATE USER 'user_name'@'%' IDENTIFIED BY 'password';
+GRANT ALL ON laravel_db.* TO 'user_name'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 exit;
 ```
 
@@ -115,12 +150,26 @@ exit;
 ```
 sudo apt install php libapache2-mod-php php-mysql php-fpm
 ```
-# Bước4: Cài wordpress
+# Bước4: Install laravel và Wordpress
+**Install laravel**
+```
+apt install composer
+composer create-project --prefer-dist laravel/laravel lavarel
+```
+**Cấu hình laravel**
+```
+sudo mv ~/lavarel/ /var/www/laravel
+chown -R www-data:www-data laravel/*
+```
+**kết nối database**
+```
+vi .env
+```
 ```
 cd /var/www/
 wget https://wordpress.org/latest.tar.gz
 tar -xvzf latest.tar.gz
-sudo chown -R www-data:www-data wordpress/*
+sudo chown -R www-datall:www-data wordpress/*
 cd wordpress
 cp wp-config-sample.php wp-config.php
 ```
@@ -132,43 +181,52 @@ vi wp-config.php
 # Bước 5:Cấu hình nginx
 ```
 cd /etc/nginx/sites-available
-vi wordpress
+vi wordpress.training.vn
 ```
 Nội dung
 ```
 server {
-    listen 80;
+    listen 80 default_server;
+
     root /var/www/html/wordpress;
-    index  index.php index.html index.htm;
-    server_name nameserver or ip;
-    client_max_body_size 500M;
+    index index.php index.html index.htm;
+
+    server_name wordpress.training.vn;
     location / {
-        try_files $uri $uri/ /index.php?$args;
+        try_files $uri $uri/ /index.php;
     }
-    location = /favicon.ico {
-        log_not_found off;
-        access_log off;
-    }
-    location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
-        expires max;
-        log_not_found off;
-    }
-    location = /robots.txt {
-        allow all;
-        log_not_found off;
-        access_log off;
-    }
+
     location ~ \.php$ {
-         include snippets/fastcgi-php.conf;
-         fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
-         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-         include fastcgi_params;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        include snippets/fastcgi-php.conf;
     }
 }
 ```
+vi laravel.training.vn
+```
+Nội dung
+```
+server {
+
+    root /var/www/laravel/public;
+    index index.php index.html index.htm;
+
+    server_name laravel.training.vn;
+    location / {
+        try_files $uri $uri/ /index.php;
+    }
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        include snippets/fastcgi-php.conf;
+    }
+}
+
+```
 **Đồng bộ file cấu hình**
 ```
-ln -s /etc/nginx/sites-available/wordpress /etc/nginx/sites-enabled/
+ln -s /etc/nginx/sites-available/wordpress.training.vn /etc/nginx/sites-enabled/
+ln -s /etc/nginx/sites-available/laravel.training.vn /etc/nginx/sites-enabled/
 rm /etc/nginx/sites-enabled/default
 ```
 **Kiểm tra**
@@ -184,6 +242,3 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 systemctl restart nginx.service
 ```
-
-# Kiểm tra
-ServerIP:80
