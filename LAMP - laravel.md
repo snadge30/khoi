@@ -48,7 +48,11 @@ sudo mv ~/lavarel/ /var/www/laravel
 chown -R www-data:www-data laravel/*
 vi .env // kết nối database
 ```
-**Cấu hình apache**
+**Cấu hình apache và port 8001**
+```
+vi /etc/apache2/ports.conf
+chỉnh port từ 80 thành 8001
+```
 ```
 cd /etc/apache2/sites-available/
 cp 0000-default.conf laravel.conf
@@ -66,4 +70,14 @@ cp 0000-default.conf laravel.conf
    CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
+```
+a2ensite laravel.conf
+```
+**restart apache**
+```
+systemctl restart apache2.service
+```
+
+# Kiểm tra
+Serverip:8001
 
