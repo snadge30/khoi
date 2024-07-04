@@ -37,7 +37,7 @@ exit;
 ```
 # Bước 3: Install PHP
 ```
-sudo apt install php libapache2-mod-php php-mysql
+sudo apt install php libapache2-mod-php php-mysql php-fpm
 ```
 # Bước4: Install laravel
 ```
@@ -86,3 +86,101 @@ systemctl restart apache2.service
 # Kiểm tra
 Serverip:8001
 
+--- 
+---
+
+LEMP + Wordpress
+
+# Bước 1: Install Nginx
+
+```
+apt install Nginx
+```
+# Bước 2: Cài mysql và tạo database
+```
+sudo apt install mysql-server
+mysql_secure_installation
+mysql
+Create database wordpress_db;
+CREATE USER 'user_name'@'%' IDENTIFIED BY 'password';
+GRANT ALL ON wordpress_db.* TO 'user_name'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+exit;
+```
+
+# Bước 3: Cài php
+```
+sudo apt install php libapache2-mod-php php-mysql php-fpm
+```
+# Bước4: Cài wordpress
+```
+cd /var/www/
+wget https://wordpress.org/latest.tar.gz
+tar -xvzf latest.tar.gz
+sudo chown -R www-data:www-data wordpress/*
+cd wordpress
+cp wp-config-sample.php wp-config.php
+```
+**Kết nối database**
+```
+vi wp-config.php
+```
+
+# Bước 5:Cấu hình nginx
+```
+cd /etc/nginx/sites-available
+vi wordpress
+```
+Nội dung
+```
+server {
+    listen 80;
+    root /var/www/html/wordpress;
+    index  index.php index.html index.htm;
+    server_name nameserver or ip;
+    client_max_body_size 500M;
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+    location = /favicon.ico {
+        log_not_found off;
+        access_log off;
+    }
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+        expires max;
+        log_not_found off;
+    }
+    location = /robots.txt {
+        allow all;
+        log_not_found off;
+        access_log off;
+    }
+    location ~ \.php$ {
+         include snippets/fastcgi-php.conf;
+         fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+         include fastcgi_params;
+    }
+}
+```
+**Đồng bộ file cấu hình**
+```
+ln -s /etc/nginx/sites-available/wordpress /etc/nginx/sites-enabled/
+rm /etc/nginx/sites-enabled/default
+```
+**Kiểm tra**
+```
+nginx -t
+```
+**Nếu đã đúng sẽ hiện:**
+```
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
+**Restart Nginx**
+```
+systemctl restart nginx.service
+```
+
+# Kiểm tra
+ServerIP:80
