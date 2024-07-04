@@ -14,7 +14,7 @@ ufw allow 'apache full'
 ufw status
 ```
 **Kiểm tra**
-http://<SERVER_IP>
+http: ServerIP
 
 # Bước 2: Install MySQL
 ```
