@@ -88,8 +88,11 @@ Serverip:8001
 
 --- 
 ---
+---
+---
+---
 
-LEMP + Wordpress
+# LEMP + Wordpress
 
 # Bước 1: Install Nginx
 
