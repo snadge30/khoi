@@ -46,7 +46,10 @@ composer create-project --prefer-dist laravel/laravel lavarel
 ```
 sudo mv ~/lavarel/ /var/www/laravel
 chown -R www-data:www-data laravel/*
-vi .env // kết nối database
+```
+**kết nối database**
+```
+vi .env //
 ```
 **Cấu hình apache và port 8001**
 ```
