@@ -976,7 +976,7 @@ It is NOT case sensitive.
 
 Which of the following statements is not a legitimate SQL statement?
 
-
+REMOVE
 COPY 
 
 Which of the following SQL queries would be the most effective in identifying MySQL users that still have pre-4.1 passwords in use?
