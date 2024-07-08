@@ -1490,6 +1490,6 @@ It is handing mail off to another mail server for delivery.
 
 Which Exim command can be used to display the total number of messages in the mail queue?
 exim -bpc
-
-
+When using MultiPHP, which of the following PHP handlers can NOT be assigned by the server administrator to more than one PHP version at a time concurrently?
+DSO
 
