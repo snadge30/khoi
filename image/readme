@@ -773,13 +773,14 @@ DSO
 
 When operating within a cPanel & WHM environment, which of these commands would display all available EasyApache 4 packages from within the server's command line?
 
+When referencing the Apache error log, what does the highlighted portion of this log entry represent?
+[Fri Sep 09 10:42:29.902022 2011] [core:error] [pid 35708:tid 4328636416] [client 72.15.99.187] File does not exist: /usr/local/apache2/htdocs/favicon.ico
+The name of the Apache module that triggered the error.
 
 yum list "ea-*"
 Which of the following options best describes the yellow-highlighted portion of the Apache access log entry shown below?
-127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
-
-
-The IP address of the requestor.
+127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326 200*
+The HTTP status code.
 
 Which of the following options could be described as a repository for PHP extensions?
 
@@ -1073,9 +1074,13 @@ Which of the following options indicates the HTTP status code that produces an e
 Forbidden. Access was denied to at least one relevant file.
 
 403
+Which factor might affect the amount of Apache access/dom logs that exist on the server?
+Based on the number of virtual hosts that exist on the server.
 When an EasyApache 4 profile is uploaded through the WHM interface, where within the file system is it stored?
+Which of the following options best describes the yellow-highlighted portion of the Apache access log entry shown below?
 
-
+127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326 127.0.0.1*
+The IP address of the requestor.
 /etc/cpanel/ea4/profiles/custom
 
 Of the following, which of these options describe information that can be obtained by using the yum info command?
@@ -1408,8 +1413,7 @@ Use the /usr/local/cpanel/bin/rebuild_phpconf command.
 
 Which of the following options best describes the yellow-highlighted portion of the Apache access log entry shown below?
 
-127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
-
+127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326 2326*
 The size of the returned file (in bytes)
 
 
