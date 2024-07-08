@@ -202,6 +202,7 @@ server {
     }
 }
 ```
+```
 vi laravel.training.vn
 ```
 Nội dung
