@@ -606,8 +606,8 @@ Which of the following command-line tools can be used to list running processes 
 ps
 Which of the following is the default path for the BIND/named configuration file?
 
+/var/named.conf
 
-/etc/named.conf
 Which section of the named.conf file controls BIND/named's listening port?
 
 
