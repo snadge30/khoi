@@ -767,6 +767,7 @@ Referencing the Apache error log entry shown below, which of the following optio
 
 The name of the Apache module that triggered the error.
 
+core* The name of the Apache module that triggered the error.
 Which of the following components can be described as a specific SAPI that provides functionality in a module that behaves as if it had been compiled into Apache itself, handling appropriate requests without producing new, non-Apache processes?
 
 DSO
@@ -781,6 +782,9 @@ yum list "ea-*"
 Which of the following options best describes the yellow-highlighted portion of the Apache access log entry shown below?
 127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326 200*
 The HTTP status code.
+
+client 72.15.99.187*
+The inbound IP address of the node that requested the item that caused the error message.
 
 Which of the following options could be described as a repository for PHP extensions?
 
@@ -810,6 +814,13 @@ Which of the following options indicates the HTTP status code that produces the 
 Unauthorized. A password is needed to see this page. The browser should prompt for a username and password.
 
 401
+Match each term with its definition.   
+package - A specially-formatted file containing installation instructions and executable code.
+profile - A set of instructions for installing modules.
+repository - A place you can download packages, modules, or extensions from.
+interpreter - A program (or part of a program) that reads in code from a specific programing language and changes it in real time to another type of code.
+provision - To provide for use. In the context of EasyApache, to install.
+
 In a server running cPanel & WHM, how can you create a new EasyApache 4 profile from within the server's command-line?
 
 In the file system, make a copy of an existing profile's file, edit it with any desired changes, then save the new file.
@@ -939,7 +950,8 @@ Tweak Settings interface in WHM.
 In a cPanel & WHM environment, which of the following tools can best be described as the executable that creates grants_[cpuser].yaml files from existing MySQL grants, as found within the existing mysql.user database?
 
 dbstoregrants
-
+Where is the default PHP session save path set to, in current versions of cPanel & WHM?
+/var/cpanel/php/sessions
 Which of the following describes one of the important steps involved in the process of relocating your MySQL data directory to a new partition?
 
 Turn off MySQL and MySQL monitoring before performing filesystem changes.
