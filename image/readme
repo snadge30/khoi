@@ -1433,6 +1433,8 @@ In a cPanel & WHM environment, which of the following options accurately describ
 
 The version that is used if a domain does not already have a specific version selected for it.
 
+What is the name of the executable responsible for the initial setup of database mapping, as well as any updates that occur between versions in a cPanel & WHM environment?
+setupdbmap
 
 To retrieve the IPv6 record of a domain, you would query for which of the following records in a domain?
 
