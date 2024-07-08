@@ -18,8 +18,7 @@ Justine's boss just told her that the authentication daemon for the mail server 
 The component that validates user credentials.
 Which of the following actions can you perform in the WHM Home » Email » Mail Queue Manager interface?
 Delete a particular message permanently so that is not delivered.
-Given the following options, which describe an actual reason that the system may place a message into the Exim queue?
-The load average on the server is above the delivery threshold.
+
 Which of the following options describe an actual value that can be adjusted within the WHM Home » Service Configuration » Mailserver Configuration interface?
 Controlling the maximum and spare quantities of authentication daemon processes.
 
@@ -60,8 +59,9 @@ WHM Home » Email » Mail Delivery Reports
 Which of the following options best indicate the typical delivery failure rate that a spamming email account will report, if examining from the Mail Delivery Reports interface found in WHM?
 The account will have a high failure rate.
 Given the following options, which of these accurately describe the behavior of the Mail Troubleshooter interface, found in WHM?
-It can report the remote or local server that Exim uses to hand off messages for a specific email address.
-
+--It can report the remote or local server that Exim uses to hand off messages for a specific email address.--
+cPanel & WHM allows you to choose whether mail should be held in the queue or returned to sender when the recipient's mailbox meets which of the following criteria?
+--Is not enforcing encryption.--
 If the mail server defers a message, what did it actually do to the message?
 Delayed it.
 Rejected it.
@@ -1448,7 +1448,9 @@ The following options found in the Exim Configuration Manager - Basic Editor int
 Sender Verification Callouts
 
 What is one characteristic that is often, though not always indicative, of an average spam email message?
-The message is large in size.
+--The message is large in size.--
+All mail from a specific user is neither delivered to the inbox nor bounced. When you check the WHM Home » Email » Mail Delivery Reports interface, you see a funnel-shaped icon next to the message. 
+--The message was likely rejected at SMTP-time because the sender's email address or server is listed in an RBL.--
 
 Which of the following options best describes the term email reputation?
 
@@ -1477,7 +1479,7 @@ In the mysql directory
 
 Which of the following mail diagnostics are available within the WHM interface, and can help you troubleshoot mail?
 
-A diagnostic tool that provides a telnet-like interface, allowing you to manually reproduce the SMTP process.
+--A diagnostic tool that provides a telnet-like interface, allowing you to manually reproduce the SMTP process.--
 
 
 If the mail server defers a message, what did it do to the message?
