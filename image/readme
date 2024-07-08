@@ -1450,7 +1450,7 @@ One record is randomly returned each time.
 
 What would be the best solution to address the email notifications that include the following message: dbindex cache file is out of date
 
-Run /scripts/fix-dbindex
+Restore the file from an available backup.
 
 Which term best describes an attribute used to sort or specify data, sometimes across tables, in the context of a MySQL database?
 
