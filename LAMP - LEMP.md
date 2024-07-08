@@ -98,7 +98,7 @@ cp 000-default.conf wordpress.training.vn.conf
   <VirtualHost *:80>
    ServerName wordpress.training.vn
    ServerAdmin webmaster@thedomain.com
-   DocumentRoot /var/www/wordpress/
+   DocumentRoot /var/www/wordpress
 
    <Directory /var/www/wordpress>
        AllowOverride All
