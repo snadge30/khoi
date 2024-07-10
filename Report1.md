@@ -12,11 +12,14 @@ Subject Alternative Names – SANs SSL: Đây là loại chứng chỉ được 
 
 # CSR file dùng làm gì trong quá trình tạo SSL
 Đây là 1 đoạn text chứa thông tin của chủ sở hữu tên miền được mã hóa. Thông tin này được gửi đến nhà cung cấp dịch vụ SSL để xác nhận.  
-
 Sử dụng OpenSSL để gen file CSR sau đó request SSL cho domain tech.training.vietnix.tech  
 **Tạo file csr**
 ```
 https://csrgenerator.com/
+```
+**chuyển đổi 2 file .csr và .key sang .crt** : 
+```
+openssl x509 -req -in tech.training.vietnix.tech.csr -signkey tech.training.vietnix.tech.key -out tech.training.vietnix.tech.crt
 ```
 # Pem file là gì ?
 PEM là tệp văn bản chứa một hoặc nhiều mục trong mã hóa Base64 ASCII.  
@@ -26,9 +29,7 @@ là file mã hoá được sinh ra cùng lúc khi tạo CSR.
 
 # PFX file là gì ? 
 file .pfx là một loại tệp định dạng khóa cá nhân chứng thực, chứa một chứng chỉ số ký số SSL.  
-```
-openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.name.crt
-```
+
 # Cách chuyển từ file crt file sang PFX file.
 openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.name.crt  
 
@@ -41,6 +42,7 @@ OK / activ :Tên miền hoạt động bình thường sau khi đăng ký.
 clientHold	:Trạng thái tạm ngừng tên miền 
 addPeriod			         :         Trạng thái sau khi vừa đăng ký tên miền.  
 autoRenewPeriod         :         Thời gian tự động gia hạn tên miền.  
+
 inactive	 		           :      Name Server chưa thể liên kết với tên miền.  
 pendingCreate			       :  Tên miền đang chờ được đăng ký.  
 pendingDelete			       : Tên miền hết hạn đăng ký và chuẩn bị xóa.  
