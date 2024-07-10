@@ -14,7 +14,10 @@ Subject Alternative Names – SANs SSL: Đây là loại chứng chỉ được 
 Đây là 1 đoạn text chứa thông tin của chủ sở hữu tên miền được mã hóa. Thông tin này được gửi đến nhà cung cấp dịch vụ SSL để xác nhận.  
 
 Sử dụng OpenSSL để gen file CSR sau đó request SSL cho domain tech.training.vietnix.tech  
-
+**Tạo file csr**
+```
+https://csrgenerator.com/
+```
 # Pem file là gì ?
 PEM là tệp văn bản chứa một hoặc nhiều mục trong mã hóa Base64 ASCII.  
 
@@ -23,7 +26,9 @@ là file mã hoá được sinh ra cùng lúc khi tạo CSR.
 
 # PFX file là gì ? 
 file .pfx là một loại tệp định dạng khóa cá nhân chứng thực, chứa một chứng chỉ số ký số SSL.  
-
+```
+openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.name.crt
+```
 # Cách chuyển từ file crt file sang PFX file.
 openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.name.crt  
 
