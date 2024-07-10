@@ -31,8 +31,9 @@ là file mã hoá được sinh ra cùng lúc khi tạo CSR.
 file .pfx là một loại tệp định dạng khóa cá nhân chứng thực, chứa một chứng chỉ số ký số SSL.  
 
 # Cách chuyển từ file crt file sang PFX file.
+```
 openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.name.crt  
-
+```
 ## Domain
 # Domain là gì ?
 Domain (hay tên miền) là địa chỉ của một website trên Internet. Người dùng truy cập website bằng cách nhập tên miền vào trình duyệt.  
