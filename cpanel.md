@@ -64,3 +64,7 @@ C Sai  ❌ https://host247.vietnix.vn:2083
 
 30. Vị trí access log mặc định trên hosting cPanel  
 Không chọn đáp án
+
+
+13. Cách chặn truy cập quốc tế đến 1 domain ở user cPanel  
+.htacces   
