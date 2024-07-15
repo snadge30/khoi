@@ -7,20 +7,20 @@ Select PHP Version hỗ trợ bởi cloudlinux
 ```
 
 4. Cách download Access Log của user ở hosting cPanel  
-B Sai  ❌ Login user cPanel -> Metrics -> Awstats
-✅ Login user cPanel -> Metrics -> Raw Access Logs
+B Sai  ❌ Login user cPanel -> Metrics -> Awstats  
+✅ Login user cPanel -> Metrics -> Raw Access Logs  
 
 6. Cách tìm add-on domain thuộc user nào trong WHM  
-D Sai  ❌ Vào WHM -> List Add-on Domains -> nhập vào domain cần tìm
-✅ Vào WHM -> List Subdomains -> nhập vào domain cần tìm
+D Sai  ❌ Vào WHM -> List Add-on Domains -> nhập vào domain cần tìm  
+✅ Vào WHM -> List Subdomains -> nhập vào domain cần tìm  
 
 8. PHP X-Ray là gì ?   
-A Sai  ❌ PHP X-Ray phân tích website trên hosting giúp tìm ra các vấn đề về cấu hình hosting.
-✅ php x-ray dùng để trace cụ thể thời gian thực thi các function php, giúp phát hiện các func nào gây chậm website khách hàng
+A Sai  ❌ PHP X-Ray phân tích website trên hosting giúp tìm ra các vấn đề về cấu hình hosting.  
+✅ php x-ray dùng để trace cụ thể thời gian thực thi các function php, giúp phát hiện các func nào gây chậm website khách hàng  
 
 10. MultiPhp Manager là gì ?    
-D Sai  ❌ Là ứng dụng thay đổi version PHP của Wordpress
-✅ Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.
+D Sai  ❌ Là ứng dụng thay đổi version PHP của Wordpress  
+✅ Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.  
 
 12.  Khách nên trỏ record nào khi sử dụng hosting Vietnix   
 D Sai  ❌ Record A  
@@ -28,12 +28,12 @@ D Sai  ❌ Record A
 13. E Đúng ✅  
 
 14. Sự khác nhau giữa Jetbackup và tính năng Backup Wizard trong cPanel  
-C Sai  ❌ Jetbackup yêu cầu người dùng backup thủ công, Backup Wizard được tự động backup  
-D Sai  ❌ Backup Wizard hỗ trợ backup dữ liệu lên Google Drive, One Drive  
+C Sai  ❌ Jetbackup yêu cầu người dùng backup thủ công, Backup Wizard được tự động backup   
+D Sai  ❌ Backup Wizard hỗ trợ backup dữ liệu lên Google Drive, One Drive   
 
 16. Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ?   
-B Sai  ❌ SSH vào hosting và kiểm tra bằng lệnh ps -aux | grep lsphp  | wc -l
-✅ ps aux | grep <user> 
+B Sai  ❌ SSH vào hosting và kiểm tra bằng lệnh ps -aux | grep lsphp  | wc -l  
+✅ ps aux | grep <user>   
 
 18. Tính năng Mailing List trong cPanel là gì ?  
 B Sai  ❌ Mailing List trong cPanel cung cấp tính năng tự động gửi thư theo lịch trình  
