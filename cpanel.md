@@ -8,7 +8,7 @@ Select PHP Version hỗ trợ bởi cloudlinux
 
 4. Cách download Access Log của user ở hosting cPanel  
 B Sai  ❌ Login user cPanel -> Metrics -> Awstats  
-✅ Login user cPanel -> Metrics -> Raw Access Logs  
+✅ Login user cPanel -> Metrics -> Raw Access ~Logs~ 
 
 6. Cách tìm add-on domain thuộc user nào trong WHM  
 D Sai  ❌ Vào WHM -> List Add-on Domains -> nhập vào domain cần tìm  
@@ -41,13 +41,22 @@ B Sai  ❌ Mailing List trong cPanel cung cấp tính năng tự động gửi t
 
 20. Các cách có thể upload dữ liệu của user lên Hosting cPanel ?  
 D Sai  ❌ Sử dụng File Upload, FTP, WinSCP, RSYNC
-✅ File Manager , FTP , scp
+✅ File Manager , FTP , ? scp ... FileZilla, WinSCP
 
 22. Plugin cache Wordpress tốt nhất khi sử dụng hosting cPanel Vietnix   
 D Sai  ❌ LSCache  
 
 23. Khác nhau giữa Alias Domain và Redirect Domain ?   
 D Sai  ❌ Alias Domain và Redirect Domain đều có chức năng chia sẻ nội dung giữa các tên miền khác nhau trên cùng một trang web  
+
+|                Alias Domain               	|                     Redirect Domain                     	|
+|:-----------------------------------------:	|:-------------------------------------------------------:	|
+| Là tên miền khác cho một website hiện có. 	| Chuyển hướng lưu lượng truy cập đến một website khác.   	|
+| Chỉ hiển thị website chính.               	| Có thể hiển thị website riêng hoặc website chính.       	|
+| Chia sẻ địa chỉ IP với website chính.     	| Có thể có địa chỉ IP riêng hoặc chung với website đích. 	|
+| Tốt cho SEO.                              	| Ít ảnh hưởng SEO hơn.                                   	|
+| Dễ sử dụng và quản lý.                    	| Có thể phức tạp hơn để thiết lập và quản lý.            	|
+
 
 24. Select PHP Version là gì ?  
 D Sai  ❌ Là ứng dụng quản lý bật tắt phiên bản PHP
