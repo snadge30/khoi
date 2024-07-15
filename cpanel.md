@@ -36,37 +36,40 @@ B Sai  ❌ SSH vào hosting và kiểm tra bằng lệnh ps -aux | grep lsphp  |
 ✅ ps aux | grep <user>   
 
 18. Tính năng Mailing List trong cPanel là gì ?  
-B Sai  ❌ Mailing List trong cPanel cung cấp tính năng tự động gửi thư theo lịch trình  
+B Sai  ❌ Mailing List trong cPanel cung cấp tính năng tự động gửi thư theo lịch trình
+✅ Mailing Lists trên cPanel là một công cụ giúp bạn gửi email đến một nhóm lớn người một cách dễ dàng và hiệu quả.
 
-19. Các cách có thể upload dữ liệu của user lên Hosting cPanel ?  
-D Sai  ❌ Sử dụng File Upload, FTP, WinSCP, RSYNC   
+20. Các cách có thể upload dữ liệu của user lên Hosting cPanel ?  
+D Sai  ❌ Sử dụng File Upload, FTP, WinSCP, RSYNC
+✅ File Manager , FTP , scp
 
-20. Plugin cache Wordpress tốt nhất khi sử dụng hosting cPanel Vietnix   
+22. Plugin cache Wordpress tốt nhất khi sử dụng hosting cPanel Vietnix   
 D Sai  ❌ LSCache  
 
-21. Khác nhau giữa Alias Domain và Redirect Domain ?   
+23. Khác nhau giữa Alias Domain và Redirect Domain ?   
 D Sai  ❌ Alias Domain và Redirect Domain đều có chức năng chia sẻ nội dung giữa các tên miền khác nhau trên cùng một trang web  
 
-22. Select PHP Version là gì ?  
-D Sai  ❌ Là ứng dụng quản lý bật tắt phiên bản PHP  
+24. Select PHP Version là gì ?  
+D Sai  ❌ Là ứng dụng quản lý bật tắt phiên bản PHP
+✅ Select PHP Version (hỗ trợ bởi cloudlinux): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.  
 
-23. Phát biểu nào sau đây là đúng nhất về Redirect Domain trong cPanel?  
+26. Phát biểu nào sau đây là đúng nhất về Redirect Domain trong cPanel?  
 E Sai  ❌ Chuyển hướng domain ABC.com sang domain khác  
 
-24. Cấu hình trỏ domain về NS host179.vietnix.vn ?   
+27. Cấu hình trỏ domain về NS host179.vietnix.vn ?   
 F Sai  ❌ Trỏ về NS ns1.vietnix.net, ns2.vietnix.net  
 
-26. File manager ở user cPanel hỗ trợ giao thức nào ?   
+28. File manager ở user cPanel hỗ trợ giao thức nào ?   
 C Sai  ❌ FTP  
 
-27. Cách reload hosting cPanel khi full Number Of Processes tại Vietnix  
-A Sai  ❌ Vào WHM -> Terminal -> chạy command cagefsctl  --reload <user>
+29. Cách reload hosting cPanel khi full Number Of Processes tại Vietnix  
+A Sai  ❌ Vào WHM -> Terminal -> chạy command cagefsctl  --reload <user>  
 ✅ > cagefs -m <user>
 
-29. Chọn câu đúng khi phát biểu về cPanel ở hosting Vietnix   
+30. Chọn câu đúng khi phát biểu về cPanel ở hosting Vietnix   
 F Sai  ❌ cPanel hosting không hỗ trợ tính năng quản lý tài khoản, website, email, cơ sở dữ liệu  
 
-30.  Cách truy cập giao diện quản lý cPanel WHM ?  
+31.  Cách truy cập giao diện quản lý cPanel WHM ?  
 C Sai  ❌ https://host247.vietnix.vn:2083  
 
 30. Vị trí access log mặc định trên hosting cPanel  
