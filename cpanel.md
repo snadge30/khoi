@@ -1,4 +1,3 @@
-VietnixTrain1, [15/07/2024 09:38]
 2. Khác nhau giữa MultiPHP Manager và Select PHP Version 
 ❌ Select PHP Version cho phép điều chỉnh php.ini (php config)
 
