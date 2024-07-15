@@ -50,7 +50,7 @@ D Sai  ❌ LSCache
 D Sai  ❌ Alias Domain và Redirect Domain đều có chức năng chia sẻ nội dung giữa các tên miền khác nhau trên cùng một trang web  
 
 |                Alias Domain               	|                     Redirect Domain                     	|
-|:-----------------------------------------:	|:-------------------------------------------------------:	|
+|:-----------------------------------------	  |:-------------------------------------------------------   |
 | Là tên miền khác cho một website hiện có. 	| Chuyển hướng lưu lượng truy cập đến một website khác.   	|
 | Chỉ hiển thị website chính.               	| Có thể hiển thị website riêng hoặc website chính.       	|
 | Chia sẻ địa chỉ IP với website chính.     	| Có thể có địa chỉ IP riêng hoặc chung với website đích. 	|
