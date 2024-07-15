@@ -1,19 +1,24 @@
 2. Khác nhau giữa MultiPHP Manager và Select PHP Version   
 ❌ Select PHP Version cho phép điều chỉnh php.ini (php config)  
+câu đúng có thể là    
+```
+MultiPHP Manager hỗ trợ bởi cPanel
+Select PHP Version hỗ trợ bởi cloudlinux
+```
 
-3. Cách download Access Log của user ở hosting cPanel  
+4. Cách download Access Log của user ở hosting cPanel  
 B Sai  ❌ Login user cPanel -> Metrics -> Awstats  
 
-4. Cách tìm add-on domain thuộc user nào trong WHM  
+5. Cách tìm add-on domain thuộc user nào trong WHM  
 D Sai  ❌ Vào WHM -> List Add-on Domains -> nhập vào domain cần tìm  
 
-5. PHP X-Ray là gì ?   
+6. PHP X-Ray là gì ?   
 A Sai  ❌ PHP X-Ray phân tích website trên hosting giúp tìm ra các vấn đề về cấu hình hosting.  
 
-6. MultiPhp Manager là gì ?    
+7. MultiPhp Manager là gì ?    
 D Sai  ❌ Là ứng dụng thay đổi version PHP của Wordpress  
 
-7.  Khách nên trỏ record nào khi sử dụng hosting Vietnix   
+8.  Khách nên trỏ record nào khi sử dụng hosting Vietnix   
 D Sai  ❌ Record A  
 
 9. E Đúng ✅  
