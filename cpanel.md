@@ -36,14 +36,14 @@ B Sai  ❌ SSH vào hosting và kiểm tra bằng lệnh ps -aux | grep lsphp  |
 ✅ ps aux | grep <user>   
 
 18. Tính năng Mailing List trong cPanel là gì ?  
-B Sai  ❌ Mailing List trong cPanel cung cấp tính năng tự động gửi thư theo lịch trình
-✅ Mailing Lists trên cPanel là một công cụ giúp bạn gửi email đến một nhóm lớn người một cách dễ dàng và hiệu quả.
+B Sai  ❌ Mailing List trong cPanel cung cấp tính năng tự động gửi thư theo lịch trình  
+✅ Mailing Lists trên cPanel là một công cụ giúp bạn gửi email đến một nhóm lớn người một cách dễ dàng và hiệu quả.  
 
 20. Các cách có thể upload dữ liệu của user lên Hosting cPanel ?  
-D Sai  ❌ Sử dụng File Upload, FTP, WinSCP, RSYNC
-✅ File Manager , FTP , ? scp ... FileZilla, WinSCP
+D Sai  ❌ Sử dụng File Upload, FTP, WinSCP, RSYNC  
+✅ File Manager , FTP , ? scp ... FileZilla, WinSCP  
 
-22. Plugin cache Wordpress tốt nhất khi sử dụng hosting cPanel Vietnix   
+22. Plugin cache Wordpress tốt nhất khi sử dụng hosting cPanel Vietnix    
 D Sai  ❌ LSCache  
 
 23. Khác nhau giữa Alias Domain và Redirect Domain ?   
@@ -59,34 +59,49 @@ D Sai  ❌ Alias Domain và Redirect Domain đều có chức năng chia sẻ n�
 
 
 24. Select PHP Version là gì ?  
-D Sai  ❌ Là ứng dụng quản lý bật tắt phiên bản PHP
+D Sai  ❌ Là ứng dụng quản lý bật tắt phiên bản PHP  
 ✅ Select PHP Version (hỗ trợ bởi cloudlinux): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.  
 
-26. Phát biểu nào sau đây là đúng nhất về Redirect Domain trong cPanel?  
-E Sai  ❌ Chuyển hướng domain ABC.com sang domain khác  
+26. Phát biểu nào sau đây là đúng nhất về Redirect Domain trong cPanel?   
+E Sai  ❌ Chuyển hướng domain ABC.com sang domain khác  l  
+Chuyển hướng từ một tên miền cũ sang tên miền mới  
+Chuyển hướng từ một tên miền phụ sang tên miền chính  
+Chuyển hướng lưu lượng truy cập từ một trang web sang trang web khác  
 
-27. Cấu hình trỏ domain về NS host179.vietnix.vn ?   
+28. Cấu hình trỏ domain về NS host179.vietnix.vn ?   
 F Sai  ❌ Trỏ về NS ns1.vietnix.net, ns2.vietnix.net  
+✅ ns1.host179.vietnix.vn ns2.host179.vietnix.vn  
 
-28. File manager ở user cPanel hỗ trợ giao thức nào ?   
-C Sai  ❌ FTP  
+30. File manager ở user cPanel hỗ trợ giao thức nào ?   
+C Sai  ❌ FTP
+✅ Http
 
-29. Cách reload hosting cPanel khi full Number Of Processes tại Vietnix  
+32. Cách reload hosting cPanel khi full Number Of Processes tại Vietnix  
 A Sai  ❌ Vào WHM -> Terminal -> chạy command cagefsctl  --reload <user>  
-✅ > cagefs -m <user>
+✅ > cagefs -m <user>  
 
-30. Chọn câu đúng khi phát biểu về cPanel ở hosting Vietnix   
+33. Chọn câu đúng khi phát biểu về cPanel ở hosting Vietnix   
 F Sai  ❌ cPanel hosting không hỗ trợ tính năng quản lý tài khoản, website, email, cơ sở dữ liệu  
 
-31.  Cách truy cập giao diện quản lý cPanel WHM ?  
-C Sai  ❌ https://host247.vietnix.vn:2083  
+34.  Cách truy cập giao diện quản lý cPanel WHM ?  
+C Sai  ❌ https://host247.vietnix.vn:2083
+✅ 2086
 
 30. Vị trí access log mặc định trên hosting cPanel  
-Không chọn đáp án
+Không chọn đáp án  
+✅ Metrics - Raw Access Logs  
 
-
-13. Cách chặn truy cập quốc tế đến 1 domain ở user cPanel  
-.htacces
+13. Cách chặn truy cập quốc tế đến 1 domain ở user cPanel   
+✅ .htacces  
 
 6. Cách hiện file ẩn trong File Manager.  
-đăng nhập -> files -> file manager -> settings - > chọn show hidden files (dotfiles). -> save
+✅ đăng nhập -> files -> file manager -> settings - > chọn show hidden files (dotfiles). -> save  
+
+Cách bật truy cập MySQL từ xa trên Hosting cPanel >>  
+✅ Login user cPanel -> Databases -> Remote MySQL -> Add Access Host   
+
+Cách xem log IP truy cập vào Domain ở user trên Hosting cPanel   
+✅ Login user cPanel -> Metrics -> Visitors  
+
+Cách tạo thêm một trang web của user trong Hosting cPanel ? >>   
+✅ Login cPanel -> Domain -> Addon Domain -> Cấu hình database -> Kiểm tra website  
