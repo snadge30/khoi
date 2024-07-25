@@ -16,11 +16,11 @@ D Sai  ❌ Vào WHM -> List Add-on Domains -> nhập vào domain cần tìm
 
 8. PHP X-Ray là gì ?   
 A Sai  ❌ PHP X-Ray phân tích website trên hosting giúp tìm ra các vấn đề về cấu hình hosting.  
-✅ php x-ray dùng để trace cụ thể thời gian thực thi các function php, giúp phát hiện các func nào gây chậm website khách hàng  
+✅ php x-ray 
 
 10. MultiPhp Manager là gì ?    
 D Sai  ❌ Là ứng dụng thay đổi version PHP của Wordpress  
-✅ Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.  
+✅ L: Là ứng dụng quản lý phiên bản PHP của cpanel
 
 12.  Khách nên trỏ record nào khi sử dụng hosting Vietnix   
 D Sai  ❌ Record A  
@@ -33,18 +33,18 @@ D Sai  ❌ Backup Wizard hỗ trợ backup dữ liệu lên Google Drive, One Dr
 
 16. Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ?   
 B Sai  ❌ SSH vào hosting và kiểm tra bằng lệnh ps -aux | grep lsphp  | wc -l  
-✅ ps aux | grep <user>   
+✅ Login vào user cPanel kiểm tra thong tin Number of Processes
 
 18. Tính năng Mailing List trong cPanel là gì ?  
 B Sai  ❌ Mailing List trong cPanel cung cấp tính năng tự động gửi thư theo lịch trình  
-✅ Mailing Lists trên cPanel là một công cụ giúp bạn gửi email đến một nhóm lớn người một cách dễ dàng và hiệu quả.  
+✅ dai nhat
 
 20. Các cách có thể upload dữ liệu của user lên Hosting cPanel ?  
 D Sai  ❌ Sử dụng File Upload, FTP, WinSCP, RSYNC  
 ✅ File Manager , FTP , ? scp ... FileZilla, WinSCP  
 
 22. Plugin cache Wordpress tốt nhất khi sử dụng hosting cPanel Vietnix    
-D Sai  ❌ LSCache  
+D Sai  ❌ ✅lightspeed cache
 
 23. Khác nhau giữa Alias Domain và Redirect Domain ?   
 D Sai  ❌ Alias Domain và Redirect Domain đều có chức năng chia sẻ nội dung giữa các tên miền khác nhau trên cùng một trang web  
@@ -81,15 +81,17 @@ A Sai  ❌ Vào WHM -> Terminal -> chạy command cagefsctl  --reload <user>
 ✅ > cagefs -m <user>  
 
 33. Chọn câu đúng khi phát biểu về cPanel ở hosting Vietnix   
-F Sai  ❌ cPanel hosting không hỗ trợ tính năng quản lý tài khoản, website, email, cơ sở dữ liệu  
+F Sai  ❌ cPanel hosting không hỗ trợ tính năng quản lý tài khoản, website, email, cơ sở dữ liệu
+cPanel hosting hỗ trợ cài đặt nhiều phiên bản PHP khác nhau. 
 
-34.  Cách truy cập giao diện quản lý cPanel WHM ?  
+35.  Cách truy cập giao diện quản lý cPanel WHM ?  
 C Sai  ❌ https://host247.vietnix.vn:2083
-✅ 2086
-
+✅ https://host247.vietnix.vn/whm
+     
 30. Vị trí access log mặc định trên hosting cPanel  
 Không chọn đáp án  
-✅ Metrics - Raw Access Logs  
+✅ var/log/*apache2*/domlogs/
+
 
 13. Cách chặn truy cập quốc tế đến 1 domain ở user cPanel   
 ✅ .htacces  
